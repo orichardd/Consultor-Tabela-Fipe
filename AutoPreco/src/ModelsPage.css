@@ -1,0 +1,23 @@
+.modelsContainer{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+
+    max-width: 60vw;
+
+}
+.modelsOut{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.escolhaModelo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

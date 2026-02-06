@@ -1,0 +1,10 @@
+.consultButtons{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 20px;
+}
+@media (max-width: 900px){
+    .consultButtons{
+        flex-direction: column;
+    }
+}
