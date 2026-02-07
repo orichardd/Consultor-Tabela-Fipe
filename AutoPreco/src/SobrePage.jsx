@@ -1,4 +1,5 @@
 import { Header } from './components/Header.jsx'
+import './SobrePage.css'
 
 export function SobrePage(){
     return(
@@ -17,7 +18,7 @@ export function SobrePage(){
                                 Todo o website e o sistema interno foram desenvolvidos por Richard Almeida, estudante do Instituto Federal de Ciência e Tecnologia do Rio Grande do Sul, com foco em oferecer uma experiência simples e confiável aos usuários.
                             </h3>
                             <h3>
-                                Os dados utilizados no site vêm da API desenvolvida por Deivid Fortuna, atualizada mensalmente para garantir informações atualizadas da Tabela Fipe. Você pode acessar o site dele <a href="">clicando aqui</a>.
+                                Os dados utilizados no site vêm da API desenvolvida por Deivid Fortuna, atualizada mensalmente para garantir informações atualizadas da Tabela Fipe. Você pode acessar o site dele <a href="https://fipe.online/" className='linkDeivid'>clicando aqui</a>.
                             </h3>
                             <h3>
                                 Vale lembrar que alguns modelos de veículos podem não estar disponíveis na base de dados.

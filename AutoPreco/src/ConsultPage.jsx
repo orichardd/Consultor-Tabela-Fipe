@@ -8,9 +8,9 @@ export function ConsultPage() {
             <Header />
             <div className='main'>
                 <div className='consultButtons'>
-                    <VehicleOption vehicleType="motos" imageSource="../public/images/classic350.png" vehicleText={"motos"} />
-                    <VehicleOption vehicleType="carros" imageSource="../public/images/corolla.webp" vehicleText={"carros"} />
-                    <VehicleOption vehicleType="caminhoes" imageSource="../public/images/mercedesTruck.png" vehicleText={"caminhoes"} />
+                    <VehicleOption vehicleType="motos" imageSource="/images/classic350.png" vehicleText={"Motos"} />
+                    <VehicleOption vehicleType="carros" imageSource="/images/corolla.webp" vehicleText={"Carros"} />
+                    <VehicleOption vehicleType="caminhoes" imageSource="/images/mercedesTruck.png" vehicleText={"Caminhões"} />
                 </div>
             </div>
         </>

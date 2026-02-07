@@ -7,24 +7,19 @@ import axios from 'axios'
 
 export function YearsPage() {
     const { vehicleType, brandCode, modelCode } = useParams();
+    const [years, setYears] = useState([]);
 
-    const json = `
-[
-  {
-    "codigo": "1995-1",
-    "nome": "1995 Gasolina"
-  },
-  {
-    "codigo": "1994-1",
-    "nome": "1994 Gasolina"
-  },
-  {
-    "codigo": "1993-1",
-    "nome": "1993 Gasolina"
-  }
-]
-`
-    const parsed = JSON.parse(json);
+
+    useEffect(() => {
+        axios.get(`http://localhost:1670/api/${vehicleType}/brands/${brandCode}/models/${modelCode}/years`)
+            .then(response => {
+                setYears(response.data);
+            })
+            .catch(error => {
+                console.error("Error fetching models:", error);
+            });
+    }, [vehicleType, brandCode]);
+
     return (
         <>
             <Header />
@@ -34,7 +29,7 @@ export function YearsPage() {
                         <h1>Escolha o ano</h1>
                     </div>
                     <div className="modelsContainer">
-                        {parsed.map((year) => (
+                        {years.map((year) => (
                             <ModelButton
                                 modelName={year.nome}
                                 modelCode={year.codigo}

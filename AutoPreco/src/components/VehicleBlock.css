@@ -1,33 +1,43 @@
 .vehicleBlock{
     background-color: rgb(255, 255, 255);
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
     width: 100%;
     width: 600px;
-    height: 600px;
+    min-height: 500px;
 
     border-radius: 25px;
     border-width: 2px;
     border-style: solid;
     border-color: rgb(87, 87, 87);
+    padding-bottom: 30px;
 }
 .vehicleImageContainer{
+    padding: 20px;
+}
+.vehicleImageContainerContent{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
-.vehicleImageContainer > img{
-    max-width: 100%;
-    height: auto;
+
+.vehicleImageContainerContent > img{
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 30px;
 }
+
 .vehicleInfo{
     display: block;
     margin: 0px;
     margin-left: 50px;
     justify-items: start;
+    height: auto;
 }
 .vehicleInfo > h2{
     color: black;
@@ -48,7 +58,7 @@
     height: auto;
 
     color: black;
-    margin: 0px;
+    padding-bottom: 0px;
 }
 .vehiclePrice > h2{
     font-size: 45px;

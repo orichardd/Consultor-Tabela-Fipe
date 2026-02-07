@@ -19,7 +19,7 @@ export function HomePage() {
                     brand="Porsche"
                     year="2020"
                     fuel="Gasolina"
-                    price="850000"
+                    price="R$850000"
                     imageLink="/images/718.png"
                 />
             </div>

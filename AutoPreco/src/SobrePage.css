@@ -1,0 +1,9 @@
+.linkDeivid{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+
+}
+.linkDeivid:hover{
+    cursor: pointer;
+}

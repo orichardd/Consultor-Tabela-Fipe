@@ -52,6 +52,7 @@ input, textarea{
 
     border-radius: 15px;
     border-width: 2px;
+    border-style: solid;
 }
 button{
     background-color: black;
